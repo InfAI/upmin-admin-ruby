@@ -3,6 +3,8 @@
   // Methods used in datetime parsing and setting.
   function parseDate(dateString) {
     var matches = dateString.match(/(\d+).(\d+).(\d+)/i);
+    console.log(matches);
+    alert(matches);
     if (matches == null || matches.length < 4) {
       return null;
     } else {
